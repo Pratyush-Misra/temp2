@@ -1,0 +1,17 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Hello and welcome!",
+            "size": "large",
+            "weight": "bolder"
+        },
+        {
+            "type": "TextBlock",
+            "text": "This is an Adaptive Card sent by the bot."
+        }
+    ]
+}

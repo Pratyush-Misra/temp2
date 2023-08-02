@@ -1,0 +1,34 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.3",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Notify Card",
+      "id": "notifyCardTb",
+      "size": "large",
+      "weight": "bolder"
+    },
+    {
+      "type": "TextBlock",
+      "text": "commitId",
+      "id": "commitId"
+    },
+    {
+      "type": "Input.Text",
+      "id": "region",
+      "placeholder": "Enter something"
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Send",
+      "data": {
+        "commitId": "${commitId.text}",
+        "region": "${region.value}"
+      }
+    }
+  ]
+}
